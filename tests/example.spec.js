@@ -1,19 +1,19 @@
-// @ts-check
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
-
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+test('test', async ({ page }) => {
+  await page.goto('https://www.91trucks.com/');
+  await page.getByLabel('Home').click();
+  await page.getByRole('heading', { name: 'What are you looking for?' }).click();
+  await page.getByRole('link', { name: 'subcategory Pickup' }).click();
+  // await page.goto('https://www.91trucks.com/');
+  // await page.getByRole('link', { name: 'subcategory Mini' }).click();
+  // await page.goto('https://www.91trucks.com/');
+  // await page.getByRole('link', { name: 'subcategory Three Wheeler' }).click();
+  // await page.getByRole('link', { name: 'subcategory Bus' }).click();
+  // await page.getByRole('heading', { name: 'Most Popular Trucks' }).click();
+  // await page.getByRole('heading', { name: 'Trucks Dealers in Popular' }).click();
+  // await page.getByRole('heading', { name: 'Most Popular Buses' }).click();
+  // await page.getByRole('heading', { name: 'Most Popular Auto Rickshaws' }).click();
+  // await page.getByRole('heading', { name: 'Most Popular Comparison' }).click();
+  // await page.getByRole('heading', { name: 'Latest News' }).click();
 });
