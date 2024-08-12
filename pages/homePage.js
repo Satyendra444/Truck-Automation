@@ -5,6 +5,10 @@ class HomePage {
   constructor(page) {
     this.page = page;
     this.homeLink = this.page.getByLabel('Home');
+    this.heading = this.page.getByRole('heading', { name: 'Select Brand' });
+    this.trucksButton = this.page.getByRole('button', { name: 'Trucks' }).first();
+    this.busesButton = this.page.getByRole('button', { name: 'Buses' }).first();
+    this.autoRickshawsButton = this.page.getByRole('button', { name: 'Auto Rickshaws' }).first();
   }
 
   async navigateToHome() {
@@ -16,9 +20,20 @@ class HomePage {
     const expectedTitle = "New Trucks, Three Wheelers & Buses, Prices, Latest Commercial Vehicle News in India";
     await expect(this.page).toHaveTitle(expectedTitle);
   }
+
+  async verifyHeading() {
+    await expect(this.heading).toBeVisible();
+  }
+
+  async verifyButtonsPresence() {
+    await expect(this.trucksButton).toBeVisible();
+    await expect(this.busesButton).toBeVisible();
+    await expect(this.autoRickshawsButton).toBeVisible();
+  }
 }
 
 module.exports = HomePage;
+
 
 
 
