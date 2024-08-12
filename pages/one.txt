@@ -1,0 +1,4 @@
+ await page.getByRole('button', { name: 'Trucks' }).first().click();
+  await page.getByRole('combobox').selectOption('tata');
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.getByRole('heading', { name: 'Best Tata Trucks in India' }).click();
