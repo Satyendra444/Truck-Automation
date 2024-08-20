@@ -9,6 +9,9 @@ class HomePage {
     this.trucksButton = this.page.getByRole('button', { name: 'Trucks' }).first();
     this.busesButton = this.page.getByRole('button', { name: 'Buses' }).first();
     this.autoRickshawsButton = this.page.getByRole('button', { name: 'Auto Rickshaws' }).first();
+    this.searchButton =  this.page.locator("div[class='block'] button[name='Search']");
+    //this.page.getByRole('button', { name: 'Search' });
+    this.searchCombobox = this.page.getByRole('combobox');
   }
 
   async navigateToHome() {
@@ -30,9 +33,32 @@ class HomePage {
     await expect(this.busesButton).toBeVisible();
     await expect(this.autoRickshawsButton).toBeVisible();
   }
+
+  async selectTruckBrand(brand) {
+    await this.trucksButton.click();
+    await this.searchCombobox.selectOption(brand);
+  }
+
+  async verifySearchBoxPresence() {
+    await expect(this.searchCombobox).toBeVisible();
+  }
+
+  async verifySearchButtonPresence() {
+    await expect(this.searchButton).toBeVisible();
+  }
+
+  async clickSearchButton() {
+    await this.searchButton.click();
+  }
+
+  async verifyBestTataTrucksHeading() {
+    const bestTataTrucksHeading = this.page.getByRole('heading', { name: 'Best Tata Trucks in India' });
+    await expect(bestTataTrucksHeading).toBeVisible();
+  }
 }
 
 module.exports = HomePage;
+
 
 
 
