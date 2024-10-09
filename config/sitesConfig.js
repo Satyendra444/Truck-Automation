@@ -13,21 +13,21 @@ module.exports = {
     infra: {
       en: {
         url: 'https://www.91infra.com/',
-        expectedTitle: "Infrastructure & Construction Vehicles in India",
+        expectedTitle: "New Construction Equipment, Latest Construction Equipment News in India",
       },
       hi: {
         url: 'https://www.91infra.com/hi',
-        expectedTitle: "91 Infra - Hindi",
+        expectedTitle: "नए निर्माण उपकरण, भारत में नवीनतम वाणिज्यिक वाहन समाचार",
       },
     },
     tractors: {
       en: {
         url: 'https://www.91tractors.com/',
-        expectedTitle: "Tractors and Agricultural Equipment in India",
+        expectedTitle: "New Tractors, Latest Commercial Vehicle News in India",
       },
       hi: {
         url: 'https://www.91tractors.com/hi',
-        expectedTitle: "91 Tractors - Hindi",
+        expectedTitle: "नए ट्रैक्टर, भारत में नवीनतम वाणिज्यिक वाहन समाचार",
       },
     },
   };
