@@ -2,7 +2,7 @@
   "name": "trucks-automation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {}  ,
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -10,5 +10,8 @@
   "devDependencies": {
     "@playwright/test": "^1.46.0",
     "@types/node": "^22.2.0"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
   }
 }
