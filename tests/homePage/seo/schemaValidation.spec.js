@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
-const urls = require('../../config/url'); // assumes base, english, hindi URLs defined
-const HomePage = require('../../pages/homepage/HomePage');
-const schemaData = require('../../utils/homepage/homeDataHelper');
+const urls = require('../../../config/url'); 
+const HomePage = require('../../../pages/homepage/HomePage');
+const schemaData = require('../../../utils/homepage/homeDataHelper');
 
 const pages = [
   { label: 'Default', key: 'base' },

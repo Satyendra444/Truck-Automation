@@ -1,7 +1,7 @@
 const { test, expect, describe } = require('@playwright/test');
-const urls = require('../../config/url');
-const metaData = require('../../utils/homepage/homeDataHelper');
-const HomePage = require('../../pages/homepage/HomePage');
+const urls = require('../../../config/url');
+const metaData = require('../../../utils/homepage/homeDataHelper');
+const HomePage = require('../../../pages/homepage/HomePage');
 
 const pages = [
   { label: 'Default', key: 'base' },

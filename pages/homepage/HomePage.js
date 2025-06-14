@@ -64,7 +64,7 @@ async getSchemas() {
       console.warn('Invalid JSON in schema:', e.message);
     }
   }
-
+  
   return schemas;
 }
 }
