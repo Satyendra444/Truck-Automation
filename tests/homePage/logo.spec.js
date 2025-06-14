@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const urls = require('../../config/url');
-const HomePage = require('../../pages/HomePage');
+const HomePage = require('../../pages/homepage/HomePage');
 
 const pages = [
   { label: 'Default', key: 'base' },

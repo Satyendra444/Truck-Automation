@@ -1,7 +1,7 @@
 const { test, expect, describe } = require('@playwright/test');
 const urls = require('../../config/url');
-const metaData = require('../../utils/homeDataHelper');
-const HomePage = require('../../pages/HomePage');
+const metaData = require('../../utils/homepage/homeDataHelper');
+const HomePage = require('../../pages/homepage/HomePage');
 
 const pages = [
   { label: 'Default', key: 'base' },
@@ -60,5 +60,17 @@ for (const { label, key } of pages) {
       const favicon = await homePage.getLinkTagHref('shortcut icon');
       expect(favicon).toBe(metaData[key].favicon);
     });
+
+    test(`${label} Home - should have correct og and twitter meta tags`, async ({ page }) => {
+  const homePage = new HomePage(page);
+  await homePage.navigate(urls[key]);
+
+  const metaTags = metaData[key].meta;
+  for (const [name, expectedContent] of Object.entries(metaTags)) {
+    const content = await homePage.getMetaTagContent(name);
+    expect(content).toBe(expectedContent);
+  }
+});
+
   });
 }

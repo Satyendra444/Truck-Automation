@@ -1,4 +1,4 @@
-const BasePage = require('./BasePage');
+const BasePage = require('../BasePage');
 const { expect } = require('@playwright/test');
 
 class HomePage extends BasePage {
@@ -37,6 +37,36 @@ async getAmpHtmlHref() {
     await locator.waitFor({ state: 'attached' });
     return locator.getAttribute('href');
   }
+  async getMetaTagContent(name) {
+  const locator = this.page.locator(`meta[name="${name}"], meta[property="${name}"]`);
+  await locator.first().waitFor({ state: 'attached' });
+  return locator.first().getAttribute('content');
+}
+async getMetaTagContent(name) {
+  const locator = this.page.locator(`meta[name="${name}"], meta[property="${name}"]`);
+  await locator.first().waitFor({ state: 'attached' });
+  return locator.first().getAttribute('content');
+}
+async getSchemas() {
+  const scriptTags = await this.page.locator('script[type="application/ld+json"]').all();
+  const schemas = [];
+
+  for (const tag of scriptTags) {
+    const content = await tag.textContent();
+    try {
+      const parsed = JSON.parse(content);
+      if (Array.isArray(parsed)) {
+        schemas.push(...parsed);
+      } else {
+        schemas.push(parsed);
+      }
+    } catch (e) {
+      console.warn('Invalid JSON in schema:', e.message);
+    }
+  }
+
+  return schemas;
+}
 }
 
 module.exports = HomePage;
