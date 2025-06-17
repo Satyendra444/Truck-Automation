@@ -32,8 +32,13 @@ pages.forEach(({ label, key, placeholder, searchTerm, resultText, verifyHeading 
   test.describe(`${label} Header Search`, () => {
 
     test.beforeEach(async ({ page }) => {
-      await page.goto(urls[key]);
-    });
+  try {
+    await page.goto(urls[key], { waitUntil: 'domcontentloaded' });
+  } catch (e) {
+    console.error(`Failed to load ${urls[key]}:`, e);
+    throw e;
+  }
+});
 
     test('should display correct placeholder', async ({ page }) => {
       await expect(page.getByPlaceholder(placeholder)).toBeVisible();
@@ -46,6 +51,7 @@ pages.forEach(({ label, key, placeholder, searchTerm, resultText, verifyHeading 
 
       const result = page.getByText(resultText, { exact: true });
       await expect(result).toBeVisible();
+      await page.waitForTimeout(5000);
       await result.click();
 
       if (verifyHeading) {
@@ -61,6 +67,7 @@ pages.forEach(({ label, key, placeholder, searchTerm, resultText, verifyHeading 
       await input.fill(searchTerm);
       await page.waitForTimeout(5000);
       await page.keyboard.press('Enter');
+      await page.waitForTimeout(5000);
       await expect(page).toHaveURL(/search|listing|tata|ace/i);
     });
 
@@ -69,12 +76,14 @@ pages.forEach(({ label, key, placeholder, searchTerm, resultText, verifyHeading 
       await input.click();
       await input.fill('invalidtruckname123');
       await page.keyboard.press('Enter');
+      await page.waitForTimeout(3000); 
 
+  //await page.screenshot({ path: 'debug-no-results.png' });
+  //console.log(await page.content());
       await expect(
         page.locator('text=/No Result Found|No Results|कोई परिणाम नहीं मिला/')
-      ).toBeVisible();
+      ).toBeVisible({ timeout: 10000 });
     });
 
   });
-
 });

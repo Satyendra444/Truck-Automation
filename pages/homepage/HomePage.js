@@ -67,6 +67,45 @@ async getSchemas() {
 
   return schemas;
 }
+// async trucksNavigationFlow({
+//   trucksLabel,
+//   newTrucksLabel,
+//   bodyTypeLabel,
+//   fuelTypeLabel,
+//   brandLabel,
+//   compareLabel,
+//   popularLabel
+// }) {
+//   const { page } = this;
+
+//   // Click "Trucks" Menu
+//   await page.locator('span', { hasText: new RegExp(`^${trucksLabel}$`) }).first().click();
+
+//   // Click "New Trucks" (use .first() to avoid strict mode error)
+//   await page.getByRole('link', { name: newTrucksLabel }).first().click();
+//   await page.waitForLoadState('networkidle');
+
+//   // Click "Popular Trucks"
+//   //await page.locator('span', { hasText: new RegExp(`^${popularLabel}$`) }).first().click();
+
+//   // Click "Body Type"
+//   await page.locator('span', { hasText: new RegExp(`^${bodyTypeLabel}$`) }).first().click();
+
+//   // Click first Fuel Type option
+//   await page.locator('li').filter({ hasText: fuelTypeLabel }).locator('span').first().click();
+
+//   // Click "Truck Brands"
+//   await page.getByText(brandLabel, { exact: true }).click();
+
+//   // Click "Compare Trucks" (use .first() again to avoid ambiguity)
+//   await page.getByRole('link', { name: compareLabel }).first().click();
+
+//   // Final: check that some heading is present
+//   await expect(page.locator('h1, h2')).toHaveCountGreaterThan(0);
+// }
+
+
+
 }
 
 module.exports = HomePage;
