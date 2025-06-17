@@ -38,7 +38,11 @@ project/
 - Reusable page interactions
 
 **HomePage.js** - Extends BasePage with:
+<<<<<<< HEAD
 - Logo visibility checks (91trucks,)
+=======
+- Logo visibility checks (91trucks)
+>>>>>>> 29ef86d (global time added)
 - SEO meta tag validation
 - Canonical and AMP link verification
 - Alternate language link validation
