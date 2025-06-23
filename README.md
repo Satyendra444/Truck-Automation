@@ -39,10 +39,14 @@ project/
 
 **HomePage.js** - Extends BasePage with:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Logo visibility checks (91trucks,)
 =======
 - Logo visibility checks (91trucks)
 >>>>>>> 29ef86d (global time added)
+=======
+- Logo visibility checks (91trucks)
+>>>>>>> 29ef86dcbb56acd85b733fd63b709bb04375997d
 - SEO meta tag validation
 - Canonical and AMP link verification
 - Alternate language link validation
