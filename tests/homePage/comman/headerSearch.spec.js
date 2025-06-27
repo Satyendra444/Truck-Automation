@@ -77,8 +77,7 @@ pages.forEach(({ label, key, placeholder, searchTerm, resultText, verifyHeading 
       await input.fill('invalidtruckname123');
       await page.keyboard.press('Enter');
       await page.waitForTimeout(3000); 
-
-  //await page.screenshot({ path: 'debug-no-results.png' });
+      
   //console.log(await page.content());
       await expect(
         page.locator('text=/No Result Found|No Results|कोई परिणाम नहीं मिला/')
