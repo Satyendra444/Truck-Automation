@@ -1,16 +1,16 @@
 module.exports = {
   base: {
-    title: `New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks`,
-    description: `91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.`,
+    title: `Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws`,
+    description: `Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.`,
     meta: {
       'robots': 'index, follow',
-      'og:title': `New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks`,
-      'og:description': `91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.`,
+      'og:title': `Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws`,
+      'og:description': `Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.`,
       'og:image': 'https://images.91trucks.com/banner/1440x450png_1737457207.png',
       'og:type': 'website',
       'og:url': 'https://www.91trucks.com',
-      'twitter:title': `New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks`,
-      'twitter:description': `91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.`,
+      'twitter:title': `Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws`,
+      'twitter:description': `Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.`,
       'twitter:image': 'https://images.91trucks.com/banner/1440x450png_1737457207.png',
       'twitter:card': 'summary_large_image',
     },
@@ -26,8 +26,8 @@ module.exports = {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "url": "https://www.91trucks.com",
-        "name": "New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks",
-        "description": "91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.",
+        "name": "Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws",
+        "description": "Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://www.91trucks.com/91trucks-logo.png"
@@ -57,17 +57,17 @@ module.exports = {
       }
     ]
   },
-  english: {title: `New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks`,
-    description: `91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.`,
+  english: {title: `Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws`,
+    description: `Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.`,
     meta: {
       'robots': 'index, follow',
-      'og:title': `New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks`,
-      'og:description': `91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.`,
+      'og:title': `Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws`,
+      'og:description': `Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.`,
       'og:image': 'https://images.91trucks.com/banner/1440x450png_1737457207.png',
       'og:type': 'website',
       'og:url': 'https://www.91trucks.com',
-      'twitter:title': `New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks`,
-      'twitter:description': `91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.`,
+      'twitter:title': `Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws`,
+      'twitter:description': `Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.`,
       'twitter:image': 'https://images.91trucks.com/banner/1440x450png_1737457207.png',
       'twitter:card': 'summary_large_image',
     },
@@ -83,8 +83,8 @@ module.exports = {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "url": "https://www.91trucks.com",
-        "name": "New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks",
-        "description": "91trucks is India's fastest-growing online platform to buy trucks, buses & three-wheelers. Check prices, specs, videos & best offers on commercial vehicles.",
+        "name": "Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws",
+        "description": "Discover popular commercial vehicles & their prices online: Mahindra pickup, Tata Ace, electric rickshaw, mini trucks, dumper trucks, EVs & more at 91trucks.",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://www.91trucks.com/91trucks-logo.png"
@@ -114,17 +114,17 @@ module.exports = {
       }
     ]},
   hindi: {
-    title: 'नए ट्रक, बस और 3-पहिया वाहन: भारत में व्यवसायिक वाहन - 91ट्रक्स',
-    description: '91ट्रक्स भारत का सबसे तेज़ी से बढ़ता हुआ ऑनलाइन प्लेटफ़ॉर्म है जहाँ ट्रक, बसें और तीन-पहिया वाहन खरीदे जा सकते हैं। व्यवसायिक वाहनों पर कीमतें, स्पेसिफिकेशन्स, वीडियो और बेहतरीन ऑफ़र देखें।',
+    title: 'ट्रक, बस और रिक्शा जैसे कमर्शियल वाहनों की जानकारी पाएँ',
+    description: '91ट्रक्स पर पिकअप ट्रक, मिनी ट्रक, और इलेक्ट्रिक रिक्शा जैसे टॉप कमर्शियल ईवी गाड़िया देखें। कमर्शियल ट्रक्स, ईवी ट्रक्स और अन्य कमर्शियल वाहनों की तुलना करें।',
     meta: {
       'robots': 'index, follow',
-      'og:title': 'नए ट्रक, बस और 3-पहिया वाहन: भारत में व्यवसायिक वाहन - 91ट्रक्स',
-      'og:description': '91ट्रक्स भारत का सबसे तेज़ी से बढ़ता हुआ ऑनलाइन प्लेटफ़ॉर्म है जहाँ ट्रक, बसें और तीन-पहिया वाहन खरीदे जा सकते हैं। व्यवसायिक वाहनों पर कीमतें, स्पेसिफिकेशन्स, वीडियो और बेहतरीन ऑफ़र देखें।',
+      'og:title': 'ट्रक, बस और रिक्शा जैसे कमर्शियल वाहनों की जानकारी पाएँ',
+      'og:description': '91ट्रक्स पर पिकअप ट्रक, मिनी ट्रक, और इलेक्ट्रिक रिक्शा जैसे टॉप कमर्शियल ईवी गाड़िया देखें। कमर्शियल ट्रक्स, ईवी ट्रक्स और अन्य कमर्शियल वाहनों की तुलना करें।',
       'og:image': 'https://images.91trucks.com/banner/1440x450png_1737457207.png',
       'og:type': 'website',
       'og:url': 'https://www.91trucks.com',
-      'twitter:title': 'नए ट्रक, बस और 3-पहिया वाहन: भारत में व्यवसायिक वाहन - 91ट्रक्स',
-      'twitter:description': '91ट्रक्स भारत का सबसे तेज़ी से बढ़ता हुआ ऑनलाइन प्लेटफ़ॉर्म है जहाँ ट्रक, बसें और तीन-पहिया वाहन खरीदे जा सकते हैं। व्यवसायिक वाहनों पर कीमतें, स्पेसिफिकेशन्स, वीडियो और बेहतरीन ऑफ़र देखें।',
+      'twitter:title': 'ट्रक, बस और रिक्शा जैसे कमर्शियल वाहनों की जानकारी पाएँ',
+      'twitter:description': '91ट्रक्स पर पिकअप ट्रक, मिनी ट्रक, और इलेक्ट्रिक रिक्शा जैसे टॉप कमर्शियल ईवी गाड़िया देखें। कमर्शियल ट्रक्स, ईवी ट्रक्स और अन्य कमर्शियल वाहनों की तुलना करें।',
       'twitter:image': 'https://images.91trucks.com/banner/1440x450png_1737457207.png',
       'twitter:card': 'summary_large_image',
     },
@@ -140,8 +140,8 @@ module.exports = {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "url": "https://www.91trucks.com",
-        "name": "नए ट्रक, बस और 3-पहिया वाहन: भारत में व्यवसायिक वाहन - 91ट्रक्स",
-        "description": "91ट्रक्स भारत का सबसे तेज़ी से बढ़ता हुआ ऑनलाइन प्लेटफ़ॉर्म है जहाँ ट्रक, बसें और तीन-पहिया वाहन खरीदे जा सकते हैं। व्यवसायिक वाहनों पर कीमतें, स्पेसिफिकेशन्स, वीडियो और बेहतरीन ऑफ़र देखें।",
+        "name": "ट्रक, बस और रिक्शा जैसे कमर्शियल वाहनों की जानकारी पाएँ",
+        "description": "91ट्रक्स पर पिकअप ट्रक, मिनी ट्रक, और इलेक्ट्रिक रिक्शा जैसे टॉप कमर्शियल ईवी गाड़िया देखें। कमर्शियल ट्रक्स, ईवी ट्रक्स और अन्य कमर्शियल वाहनों की तुलना करें।",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://www.91trucks.com/91trucks-logo.png"

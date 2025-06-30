@@ -50,6 +50,6 @@ paths.forEach((path) => {
   test(`Verify title and redirection for ${path}`, async ({ page }) => {
     const baseUrl = urls.base;
     await page.goto(`${baseUrl}${path}`);
-    await expect(page).toHaveTitle('New Truck, Bus and 3 Wheelers: Commercial Vehicles In India - 91trucks');
+    await expect(page).toHaveTitle('Explore A Range Of Commercial Trucks, EVs, Buses & Rickshaws');
   });
 });

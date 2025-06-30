@@ -74,6 +74,7 @@ pages.forEach(({ label, key, placeholder, searchTerm, resultText, verifyHeading 
     test('should show no result for invalid search term', async ({ page }) => {
       const input = page.getByPlaceholder(placeholder);
       await input.click();
+      await page.waitForTimeout(3000); 
       await input.fill('invalidtruckname123');
       await page.keyboard.press('Enter');
       await page.waitForTimeout(3000); 
