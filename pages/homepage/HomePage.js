@@ -4,10 +4,10 @@ const { expect } = require('@playwright/test');
 class HomePage extends BasePage {
   constructor(page) {
     super(page);
-    this.Logo = page.locator('img[alt="91trucks"][width="100"][height="29"]');
-    this.trucksLogo = page.locator('//img[@title="91trucks"]');
-    this.tractorsLogo = page.locator('//img[@title="91tractors.com"]');
-    this.infraLogo = page.locator('//img[@title="91infra.com"]');
+   this.Logo = page.locator('img[alt="91trucks"][width="100"][height="29"]').first();
+this.trucksLogo = page.locator('//img[@title="91trucks"]').first();
+this.tractorsLogo = page.locator('//img[@title="91tractors.com"]').first();
+this.infraLogo = page.locator('//img[@title="91infra.com"]').first();
 }
 
   async isLogoVisible(logoElement) {
@@ -102,7 +102,16 @@ async getSchemas() {
 
 //   // Final: check that some heading is present
 //   await expect(page.locator('h1, h2')).toHaveCountGreaterThan(0);
-// }
+// }\
+async getImages() {
+    return await this.page.$$eval("img", (imgs) =>
+      imgs.map((img) => ({
+        alt: img.getAttribute("alt") || "",
+        src: img.getAttribute("src") || "",
+        srcset: img.getAttribute("srcset") || "",
+      }))
+    );
+  }
 
 
 

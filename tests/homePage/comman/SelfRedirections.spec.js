@@ -12,6 +12,7 @@ const paths = [
   '/tractor-bodymakers',
   '/en/tractors',
   '/en/compare-tractor',
+  '/en/compare-tractors',
   '/en/tractor-dealers',
   '/en/tractor-servicecenters',
   '/en/tractor-spareparts',
